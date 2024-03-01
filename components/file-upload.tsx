@@ -21,6 +21,7 @@ export const FileUpload = ({
         onChange(res?.[0].url);
       }}
       onUploadError={(error: Error) => {
+        console.log("error", error);
         toast.error(`${error?.message}`);
       }}
     />
